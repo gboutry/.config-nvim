@@ -5,7 +5,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
     use({
         'rose-pine/neovim',
@@ -14,29 +14,29 @@ return require('packer').startup(function(use)
             vim.cmd('colorscheme rose-pine')
         end
     })
-    use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
+    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('tpope/vim-fugitive')
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
             -- LSP Support
-            {'neovim/nvim-lspconfig'},
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'neovim/nvim-lspconfig' },
+            { 'williamboman/mason.nvim' },
+            { 'williamboman/mason-lspconfig.nvim' },
 
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-nvim-lua'},
-            {'hrsh7th/cmp-nvim-lsp-signature-help'},
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'saadparwaiz1/cmp_luasnip' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-nvim-lua' },
+            { 'hrsh7th/cmp-nvim-lsp-signature-help' },
 
             -- Snippets
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
-            {'hrsh7th/cmp-vsnip'},
+            { 'L3MON4D3/LuaSnip' },
+            { 'rafamadriz/friendly-snippets' },
+            { 'hrsh7th/cmp-vsnip' },
         }
     }
     use 'ThePrimeagen/vim-be-good'
@@ -49,5 +49,9 @@ return require('packer').startup(function(use)
             'nvim-tree/nvim-web-devicons', -- optional, for file icons
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    }
+    use {
+        "folke/trouble.nvim",
+        requires = "kyazdani42/nvim-web-devicons",
     }
 end)

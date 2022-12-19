@@ -42,4 +42,5 @@ return require('packer').startup(function(use)
   use 'ThePrimeagen/vim-be-good'
   use 'numToStr/Comment.nvim'
   use 'windwp/nvim-autopairs'
+  use 'voldikss/vim-floaterm'
 end)

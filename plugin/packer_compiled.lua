@@ -185,6 +185,11 @@ _G.packer_plugins = {
     path = "/home/gboutry/.local/share/nvim/site/pack/packer/start/vim-be-good",
     url = "https://github.com/ThePrimeagen/vim-be-good"
   },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/gboutry/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/gboutry/.local/share/nvim/site/pack/packer/start/vim-fugitive",

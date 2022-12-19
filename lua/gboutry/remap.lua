@@ -20,3 +20,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set({ "n", "v" }, "<leader>f", vim.lsp.buf.format)
 -- replace global live
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- move between split window
+vim.keymap.set("n", "<C-h>", [[:wincmd h<CR>]])
+vim.keymap.set("n", "<C-l>", [[:wincmd l<CR>]])

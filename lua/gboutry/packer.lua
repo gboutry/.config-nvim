@@ -39,8 +39,15 @@ return require('packer').startup(function(use)
             {'hrsh7th/cmp-vsnip'},
         }
     }
-  use 'ThePrimeagen/vim-be-good'
-  use 'numToStr/Comment.nvim'
-  use 'windwp/nvim-autopairs'
-  use 'voldikss/vim-floaterm'
+    use 'ThePrimeagen/vim-be-good'
+    use 'numToStr/Comment.nvim'
+    use 'windwp/nvim-autopairs'
+    use 'voldikss/vim-floaterm'
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional, for file icons
+        },
+        tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    }
 end)

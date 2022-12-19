@@ -16,6 +16,8 @@ vim.o.listchars='eol:↵,trail:~,tab:>-,lead:.'
 
 vim.opt.completeopt =  {'menuone', 'noselect', 'noinsert'}
 
+vim.opt.termguicolors = true
+
 
 -- Fixed column for diagnostics to appear
 -- Show autodiagnostic popup on cursor hover_range

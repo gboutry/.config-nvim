@@ -56,4 +56,8 @@ return require('packer').startup(function(use)
         'm-demare/hlargs.nvim',
         requires = { 'nvim-treesitter/nvim-treesitter' }
     }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
 end)

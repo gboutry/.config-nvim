@@ -1,2 +1,4 @@
 local trouble = require("trouble")
-trouble.setup()
+trouble.setup({
+    position = "right"
+})

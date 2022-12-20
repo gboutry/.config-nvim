@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/gboutry/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["hlargs.nvim"] = {
+    loaded = true,
+    path = "/home/gboutry/.local/share/nvim/site/pack/packer/start/hlargs.nvim",
+    url = "https://github.com/m-demare/hlargs.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/gboutry/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",

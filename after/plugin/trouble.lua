@@ -20,7 +20,7 @@ vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>",
 )
 
 trouble.setup({
-    position = "right",
+    position = "bottom",
     mode = "document_diagnostics",
     auto_open = true,
     auto_close = true

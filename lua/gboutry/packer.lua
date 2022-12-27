@@ -18,6 +18,9 @@ return require('packer').startup(function(use)
             { 'williamboman/mason.nvim' },
             { 'williamboman/mason-lspconfig.nvim' },
 
+            -- LSP Config
+            { 'tamago324/nlsp-settings.nvim' },
+
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' },
             { 'hrsh7th/cmp-buffer' },

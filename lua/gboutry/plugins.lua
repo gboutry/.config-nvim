@@ -1,17 +1,15 @@
-vim.cmd [[packadd packer.nvim]]
-
-return require('packer').startup(function(use)
+return {
     -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    -- 'wbthomason/packer.nvim',
+    {
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
         requires = { { 'nvim-lua/plenary.nvim' } }
-    }
-    use 'navarasu/onedark.nvim'
-    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-    use('tpope/vim-fugitive')
-    use {
-        'VonHeikemen/lsp-zero.nvim',
+    },
+    'navarasu/onedark.nvim',
+    ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' }),
+    'tpope/vim-fugitive',
+     {
+        'VonHeikemen/lsp-zero.nvim',,
         requires = {
             -- LSP Support
             { 'neovim/nvim-lspconfig' },
@@ -35,32 +33,33 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' },
             { 'hrsh7th/cmp-vsnip' },
         }
-    }
-    use 'ThePrimeagen/vim-be-good'
-    use 'numToStr/Comment.nvim'
-    use 'windwp/nvim-autopairs'
-    use 'voldikss/vim-floaterm'
-    use {
+    },
+    --  'ThePrimeagen/vim-be-good',
+     'numToStr/Comment.nvim',
+     'windwp/nvim-autopairs',
+     'voldikss/vim-floaterm',
+     {
         'nvim-tree/nvim-tree.lua',
         requires = {
             'nvim-tree/nvim-web-devicons', -- optional, for file icons
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
-    }
-    use {
+    },
+     {
         "folke/trouble.nvim",
         requires = "kyazdani42/nvim-web-devicons",
-    }
-    use {
+    },
+     {
         "folke/todo-comments.nvim",
         requires = "nvim-lua/plenary.nvim",
-    }
-    use {
+    },
+     {
         'm-demare/hlargs.nvim',
         requires = { 'nvim-treesitter/nvim-treesitter' }
-    }
-    use {
+    },
+    {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
-end)
+    },
+}
+
